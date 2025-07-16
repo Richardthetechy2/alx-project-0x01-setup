@@ -38,5 +38,5 @@ export interface Company {
 }
 
 export interface UserPageProps {
-    users: UserProps[]
+    posts: UserProps[]
 }
