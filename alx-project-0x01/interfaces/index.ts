@@ -50,10 +50,10 @@ export interface PostData {
 
 export interface PostModalProps {
     onClose: () => void;
-    onSubmit: (post: PostData) => void
+    onSubmit: (post: PostData) => void;
 }
 
-export interface UserData {
+export interface UserProp {
     id?: number; // optional
     name: string;
     username: string;
@@ -79,5 +79,5 @@ export interface UserData {
 
 export interface UserModalProps {
     onClose: () => void;
-    onSubmit: (user: UserData) => void;
+    onSubmit: (post: UserProp) => void;
 }

@@ -7,8 +7,8 @@ import PostModal from "@/components/common/PostModal";
 
 
 const Posts: React.FC<PostPageProps> = ({ posts }) => {
-    const [post, setPost] = useState<PostData | null>(null)
-    const [isModalOpen, setModalOpen] = useState(false)
+    const [post, setPost] = useState<PostData | null>(null);
+    const [isModalOpen, setModalOpen] = useState(false);
 
     const handleAddPost = (newPost: PostData) => {
         setPost({ ...newPost, id: posts.length + 1 })

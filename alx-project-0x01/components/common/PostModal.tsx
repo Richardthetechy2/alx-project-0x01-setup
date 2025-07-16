@@ -1,4 +1,4 @@
-import { PostData, PostModalProps, PostProps } from "@/interfaces";
+import { PostData, PostModalProps } from "@/interfaces";
 import { disconnect } from "process";
 import React, { useState } from "react";
 const PostModal: React.FC<PostModalProps> = ({ onClose, onSubmit }) => {

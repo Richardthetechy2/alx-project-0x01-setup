@@ -1,14 +1,14 @@
 import Header from "@/components/layout/Header";
 import UserCard from "@/components/common/UserCard";
-import { UserPageProps, UserProps, UserData } from "@/interfaces";
+import { UserPageProps, UserProps, UserProp } from "@/interfaces";
 import { useState } from "react";
 import UserModal from "@/components/common/UserModal";
 
 const Users: React.FC<UserPageProps> = ({ posts }) => {
-    const [user, setUser] = useState<UserData | null>(null);
+    const [user, setUser] = useState<UserProp | null>(null);
     const [isModalOpen, setModalOpen] = useState(false);
 
-    const handleAddUser = (newUser: UserData) => {
+    const handleAddUser = (newUser: UserProp) => {
         // Simulate adding user
         setUser({ ...newUser, id: posts.length + 1 });
         console.log("Added User:", newUser);
